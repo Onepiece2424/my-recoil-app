@@ -3,6 +3,7 @@ import TextInput from './TextInput'
 import CharacterCount from './CharacterCount'
 import { atom } from 'recoil'
 import styled from 'styled-components'
+import FontButton from './FontButton.tsx'
 
 
 const CharacterCounter = () => {
@@ -14,10 +15,16 @@ const CharacterCounter = () => {
     default: '',
   });
 
+  const fontSizeState = atom({
+    key: 'fontSizeState',
+    default: 14,
+  });
+
   return (
     <StyledWrapper>
       <TextInput textState={textState} />
       <CharacterCount textState={textState} />
+      <FontButton fontSizeState={fontSizeState} />
     </StyledWrapper>
   )
 }
