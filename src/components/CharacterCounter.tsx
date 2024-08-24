@@ -1,7 +1,6 @@
 import React from 'react'
 import TextInput from './TextInput'
 import CharacterCount from './CharacterCount'
-import { atom } from 'recoil'
 import styled from 'styled-components'
 import FontButton from './FontButton.tsx'
 
