@@ -1,7 +1,8 @@
 import React from 'react'
 import { useRecoilState } from 'recoil';
+import { textState } from '../atoms/notesAtom.ts';
 
-const TextInput = ({ textState }) => {
+const TextInput = () => {
 
   const [text, setText] = useRecoilState(textState);
 

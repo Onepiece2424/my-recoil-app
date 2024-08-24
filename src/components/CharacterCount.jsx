@@ -1,8 +1,8 @@
 import React from 'react'
 import { selector, useRecoilValue } from 'recoil';
+import { textState } from '../atoms/notesAtom.ts';
 
-
-const CharacterCount = ({ textState }) => {
+const CharacterCount = () => {
   const charCountState = selector({
     key: 'charCountState',
     get: ({get}) => {

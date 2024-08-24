@@ -1,8 +1,9 @@
 import React from 'react'
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
+import { fontSizeState } from '../atoms/notesAtom.ts';
 
-const FontButton = ({ fontSizeState }) => {
+const FontButton = () => {
 
   const [fontSize, setFontSize] = useRecoilState(fontSizeState);
 

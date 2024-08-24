@@ -10,21 +10,11 @@ const CharacterCounter = () => {
   let name:string = 'Aさん'
   console.log(name)
 
-  const textState = atom({
-    key: 'textState',
-    default: '',
-  });
-
-  const fontSizeState = atom({
-    key: 'fontSizeState',
-    default: 14,
-  });
-
   return (
     <StyledWrapper>
-      <TextInput textState={textState} />
-      <CharacterCount textState={textState} />
-      <FontButton fontSizeState={fontSizeState} />
+      <TextInput />
+      <CharacterCount />
+      <FontButton />
     </StyledWrapper>
   )
 }
